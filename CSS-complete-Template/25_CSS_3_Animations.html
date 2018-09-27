@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3 Animation</title>
+    <style>
+        body{
+            font-family: "Comic Sans MS",sans-serif;
+        }
+        .simple{
+            height: 100px;
+            width: 100px;
+            background-color: lightgreen;
+            border-radius: 50%;
+            border: 20px solid forestgreen;
+            animation:simple 4s infinite linear;
+        }
+        @keyframes simple {
+            0%,50%,100%{
+                border-color: forestgreen;
+                background-color: lightgreen;
+            }
+            25%,75%{
+                border-color: lightgreen;
+                background-color: forestgreen;
+            }
+        }
+        .spin{
+             width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 20px solid orange;
+            border-top: 20px solid darkred;
+            border-bottom: 20px solid darkblue;
+            animation: spin 2s infinite linear;
+
+        }
+        @keyframes spin {
+            0%{transform: rotate(0deg)}
+            100%{transform: rotate(360deg)}
+        }
+        .news{
+            background-color: orange;
+            width: 1000px;
+            margin: auto;
+            color: white;
+            padding: 20px;
+            font-size: 20px;
+            box-shadow: 0 0 15px black;
+            border-radius: 50px;
+            border: 10px solid orangered;
+            overflow: hidden;/* mandetory */
+        }
+        .news p{
+            margin: 0;
+            animation: para 20s infinite linear;
+        }
+        @keyframes para {
+            0%{transform: translateX(100%)}
+            100%{transform: translateX(-100%)}
+        }
+
+        .animate{
+            margin-bottom: 220px;
+            height: 100px;
+            width: 100px;
+            background-color: orange;
+            border: 15px solid orangered;
+            animation: animate 4s infinite linear;
+            position: relative;
+        }
+        @keyframes animate {
+            0%{
+                border-radius: 0%;
+                top: 0px;
+                left: 200px;
+                transform: rotate(90deg);
+            }
+            25%{
+                border-radius: 50%;
+                top: 0px;
+                left: 200px;
+                transform: rotate(180deg);
+            }
+            50%{
+                border-radius: 0%;
+                top: 200px;
+                left: 200px;
+                transform: rotate(270deg);
+            }
+            75%{
+                border-radius: 50%;
+                top: 200px;
+                left: 0px;
+                transform: rotate(360deg);
+            }
+            100%{
+                border-radius: 0%;
+                top: 0px;
+                left: 0px;
+                transform: rotate(450deg);
+            }
+        }
+        .football{
+            width: 85px;
+            height: 85px;
+            background-image: url("img/ball-clip-art.jpg");
+            margin-bottom: 250px;
+            position: relative;
+            animation: football 10s infinite linear;
+        }
+        @keyframes football {
+            50%,50%{
+                border-radius: 50%;
+                top: 0;
+                left: 0px;
+                transform: rotate(90deg);
+            }
+            60%,40%{
+                border-radius: 50%;
+                top: 250px;
+                left: 250px;
+                transform: rotate(180deg);
+            }
+            70%,30%{
+                border-radius: 50%;
+                top: 0px;
+                left: 500px;
+                transform: rotate(270deg);
+            }
+            80%,20%{
+                border-radius: 50%;
+                top: 250px;
+                left: 750px;
+                transform: rotate(360deg);
+            }
+            90%,10%{
+                border-radius: 50%;
+                top: 0;
+                left: 1000px;
+                transform: rotate(450deg);
+            }
+            100%,0%{
+                border-radius: 50%;
+                top: 250px;
+                left: 1250px;
+                transform: rotate(540deg);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h3>Simple Animation</h3>
+    <div class="simple"></div>
+
+    <hr>
+
+    <h3>Spin Animation</h3>
+    <div class="spin"></div>
+
+    <hr>
+
+    <h3>News Animation</h3>
+    <div class="news">
+        <p>Latest News: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, voluptatibus?</p>
+    </div>
+
+    <hr>
+
+    <!-- Box Animation -->
+    <h3>Box Animation</h3>
+    <div class="animate"></div>
+
+    <hr>
+
+    <!-- Foot Ball Animation -->
+    <h3>Foot Ball Animation</h3>
+    <div class="football"></div>
+    <hr>
+
+</body>
+</html>
