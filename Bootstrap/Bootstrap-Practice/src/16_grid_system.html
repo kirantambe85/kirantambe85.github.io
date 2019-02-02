@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bootstrap/css/fontawesome-all.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/css/mdb.css">
+    <link rel="stylesheet" href="bootstrap/css/style.css">
+    <title>Grid System in Bootstrap4</title>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Grid System in Bootstrap4</a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</nav>
+
+<div class="container-fluid mt-5">
+    <!--########################START HERE#########################-->
+
+    <!-- AUTO LAYOUT COLUMNS -->
+    <div class="container">
+        <div class="row text-white">
+            <div class="col bg-primary">
+                <h3>Col</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti ducimus illum sint totam vel. Eius, hic, ipsum? A ab aliquid assumenda culpa dignissimos distinctio dolores eius eligendi enim error expedita explicabo facere fuga, fugit harum iste iure laudantium mollitia natus quia quis recusandae sunt tempora ut velit, voluptatem voluptatum? Voluptatibus?</p>
+            </div>
+            <div class="col bg-teal">
+                <h3>Col</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti ducimus illum sint totam vel. Eius, hic, ipsum? A ab aliquid assumenda culpa dignissimos distinctio dolores eius eligendi enim error expedita explicabo facere fuga, fugit harum iste iure laudantium mollitia natus quia quis recusandae sunt tempora ut velit, voluptatem voluptatum? Voluptatibus?</p>
+            </div>
+            <div class="col bg-warning">
+                <h3>Col</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti ducimus illum sint totam vel. Eius, hic, ipsum? A ab aliquid assumenda culpa dignissimos distinctio dolores eius eligendi enim error expedita explicabo facere fuga, fugit harum iste iure laudantium mollitia natus quia quis recusandae sunt tempora ut velit, voluptatem voluptatum? Voluptatibus?</p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- RESPONSIVE CLASSES -->
+     <h2 class="mt-3">Responcive Classes</h2>
+      <div class="container">
+          <div class="row">
+              <div class="bg-primary col-sm-6 col-md-4 col-lg-8 col-xl-6">
+                  <h3>bg-primary</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis cum dolores fugit incidunt, laboriosam perspiciatis qui quia quidem rerum voluptas? Aliquam asperiores, beatae dolorem earum facere illo in iure iusto laboriosam natus porro tempore ullam vero. Aliquid aspernatur consequuntur ea eos impedit ipsa magnam modi, nisi possimus quasi quia tenetur.</p>
+              </div>
+              <div class="bg-teal col-sm-6 col-md-8 col-lg-4 col-xl-6">
+                  <h3>bg-teal</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis cum dolores fugit incidunt, laboriosam perspiciatis qui quia quidem rerum voluptas? Aliquam asperiores, beatae dolorem earum facere illo in iure iusto laboriosam natus porro tempore ullam vero. Aliquid aspernatur consequuntur ea eos impedit ipsa magnam modi, nisi possimus quasi quia tenetur.</p>
+              </div>
+          </div>
+
+      </div>
+
+    <!-- NESTING GRIDS -->
+    <h2 class="mt-3">Nested Grid</h2>
+     <div class="container">
+         <div class="row text-white">
+             <div class="col-md-4 bg-primary">
+                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur excepturi, fuga maiores nulla perferendis quis repellendus ullam. Ad adipisci aperiam aut consequuntur cum dolorum eligendi eum eveniet, exercitationem explicabo facere impedit magni molestiae neque odio pariatur, praesentium recusandae reiciendis rem similique, sit ullam ut velit! Asperiores assumenda ipsa modi voluptatem.</p>
+             </div>
+             <div class="col-md-8 bg-secondary">
+                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur excepturi, fuga maiores nulla perferendis quis repellendus ullam. Ad adipisci aperiam aut consequuntur cum dolorum eligendi eum eveniet, exercitationem explicabo facere impedit magni molestiae neque odio pariatur, praesentium recusandae reiciendis rem similique, sit ullam ut velit! Asperiores assumenda ipsa modi voluptatem.</p>
+                  <div class="row">
+                      <div class="col-md-6 bg-warning">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus iure labore sequi! Animi, commodi exercitationem id ipsa, maiores minima neque nihil officiis omnis praesentium recusandae reprehenderit rerum sapiente temporibus vero? Accusamus cupiditate expedita fugit incidunt iusto numquam omnis repellat, voluptatum.</p>
+                      </div>
+                      <div class="col-md-6 bg-teal">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque dicta earum enim id necessitatibus nostrum obcaecati, perspiciatis quam rerum unde. Amet architecto aspernatur assumenda autem beatae cum cupiditate dolorem exercitationem fugiat fugit, incidunt laborum libero quasi quisquam vero vitae voluptatibus.</p>
+                         <div class="row">
+                             <div class="col-md-6 bg-danger">
+                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci dolorem earum itaque nesciunt placeat, quidem recusandae velit. Aliquid aperiam atque deleniti ea esse iure libero minus molestias nihil pariatur porro, quam quasi quis quo reiciendis reprehenderit sit voluptate voluptatibus voluptatum.</p>
+                             </div>
+                             <div class="col-md-6 bg-dark">
+                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab at commodi cum eligendi fugit, inventore maxime non tempore! Ab, adipisci cum dicta esse laudantium similique sunt? Dignissimos earum ipsum odio optio quasi. Atque earum facilis natus, perferendis rem similique ullam.</p>
+                             </div>
+                         </div>
+                      </div>
+                  </div>
+             </div>
+         </div>
+     </div>
+  </div>
+
+  <div style="margin-top:500px;"></div>
+
+<!-- BODY ENDS -->
+<script src="bootstrap/js/fontawesome-all.js"></script>
+<script src="bootstrap/js/jquery-3.2.1.min.js"></script>
+<script src="bootstrap/js/popper.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="bootstrap/js/mdb.min.js"></script>
+</body>
+</html>
